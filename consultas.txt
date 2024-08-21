@@ -1,0 +1,56 @@
+ Consultas Sobre Humanos e Suas Profissões
+1. Verificar se alguém é humano:
+   - human(socrates).
+   - human(plato).
+
+2. Obter a profissão de uma pessoa:
+   - profession(socrates, philosopher).
+   - profession(einstein, physicist).
+
+3. Consultar quem tem uma certa profissão:
+   - profession(X, philosopher).
+   - profession(X, physicist).
+
+ Consultas Sobre Gostos Pessoais
+4. Verificar o que uma pessoa gosta:
+   - likes(socrates, philosophy).
+   - likes(einstein, science).
+
+5. Descobrir quem gosta de um determinado assunto:
+   - likes(X, philosophy).
+   - likes(X, science).
+
+ Consultas Sobre Relações Familiares
+6. Verificar quem é pai de quem:
+   - parent(socrates, plato).
+   - parent(aristotle, alexander).
+
+7. Descobrir os filhos de alguém:
+   - parent(socrates, X).
+   - parent(plato, X).
+
+8. Verificar quem é ancestral de quem (usando a regra ancestor/2):
+   - ancestor(socrates, alexander).
+   - ancestor(plato, alexander).
+
+9. Descobrir todos os ancestrais de uma pessoa:
+   - ancestor(X, alexander).
+
+ Consultas Sobre Mortalidade (usando a regra mortal/1)
+10. Verificar se uma pessoa é mortal:
+    - mortal(socrates).
+    - mortal(newton).
+
+11. Descobrir quem são todos os mortais (todos os humanos):
+    - mortal(X).
+
+ Consultas Variadas (Combinando as Informações)
+12. Verificar se uma pessoa gosta de algo relacionado à sua profissão:
+    - profession(X, philosopher), likes(X, philosophy).
+    - profession(X, physicist), likes(X, science).
+
+13. Verificar se uma pessoa é filósofo e é mortal:
+    - profession(X, philosopher), mortal(X).
+
+14. Descobrir se existe um ancestral comum entre duas pessoas:
+    - ancestor(Y, socrates), ancestor(Y, aristotle).
